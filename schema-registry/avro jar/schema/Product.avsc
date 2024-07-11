@@ -1,0 +1,31 @@
+{
+  "type": "record",
+  "name": "Product",
+  "namespace": "com.codewithz.kafka.model",
+  "fields": [
+    {
+      "name": "Color",
+      "type": {
+        "type": "enum",
+        "name": "Color",
+        "symbols": ["GREEN", "BLUE", "PURPLE"]
+      }
+    },
+    {
+      "name": "ProductType",
+      "type": {
+        "type": "enum",
+        "name": "ProductType",
+        "symbols": ["TSHIRT", "DESIGN"]
+      }
+    },
+    {
+      "name": "DesignType",
+      "type": {
+        "type": "enum",
+        "name": "DesignType",
+        "symbols": ["NONE", "SUITCASE", "CAR", "WARNING"]
+      }
+    }
+  ]
+}
