@@ -1,0 +1,1 @@
+Basic Concepts: https://www.conduktor.io/kafka/kafka-topics-advanced/
