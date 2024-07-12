@@ -1,0 +1,23 @@
+
+]squid:S1444":Make this "public static WEATHER_ARRAY_SCHEMA" field final(¯›Ğ’üÿÿÿÿ8ç”µ¾ì-
+Osquid:S1444 "1Make this "public static WIND_SCHEMA" field final(½£ßÚ8ç”µ¾ì-
+Œ"squid:ClassVariableVisibilityCheck"WMake MAIN_SCHEMA a static final constant or non-public and provide accessors if needed.(ü‡èÑ8ç”µ¾ì-
+’"squid:ClassVariableVisibilityCheck."XMake VALUE_SCHEMA a static final constant or non-public and provide accessors if needed.(ÒØŠºúÿÿÿÿ8ç”µ¾ì-
+tsquid:S3008"VRename this field "MAIN_SCHEMA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü‡èÑ8ç”µ¾ì-
+xsquid:S3008("URename this field "KEY_SCHEMA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ÔóÚùÿÿÿÿ8ç”µ¾ì-
+tsquid:S3008 "VRename this field "WIND_SCHEMA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½£ßÚ8ç”µ¾ì-
+Usquid:S1444."2Make this "public static VALUE_SCHEMA" field final(ÒØŠºúÿÿÿÿ8ç”µ¾ì-
+"squid:ClassVariableVisibilityCheck
+"ZMake WEATHER_SCHEMA a static final constant or non-public and provide accessors if needed.(åÙç“8ç”µ¾ì-
+š"squid:ClassVariableVisibilityCheck"`Make WEATHER_ARRAY_SCHEMA a static final constant or non-public and provide accessors if needed.(¯›Ğ’üÿÿÿÿ8ç”µ¾ì-
+Œ"squid:ClassVariableVisibilityCheck "WMake WIND_SCHEMA a static final constant or non-public and provide accessors if needed.(½£ßÚ8ç”µ¾ì-
+wsquid:S3008
+"YRename this field "WEATHER_SCHEMA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åÙç“8ç”µ¾ì-
+]squid:S1118":Add a private constructor to hide the implicit public one.(Å¢ÑÃûÿÿÿÿ8ç”µ¾ì-
+Ssquid:S1444("0Make this "public static KEY_SCHEMA" field final(¼ÔóÚùÿÿÿÿ8ç”µ¾ì-
+zsquid:S3008."WRename this field "VALUE_SCHEMA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒØŠºúÿÿÿÿ8ç”µ¾ì-
+‚squid:S3008"_Rename this field "WEATHER_ARRAY_SCHEMA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯›Ğ’üÿÿÿÿ8ç”µ¾ì-
+Rsquid:S1444
+"4Make this "public static WEATHER_SCHEMA" field final(åÙç“8ç”µ¾ì-
+"squid:ClassVariableVisibilityCheck("VMake KEY_SCHEMA a static final constant or non-public and provide accessors if needed.(¼ÔóÚùÿÿÿÿ8ç”µ¾ì-
+Osquid:S1444"1Make this "public static MAIN_SCHEMA" field final(ü‡èÑ8ç”µ¾ì-
