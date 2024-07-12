@@ -71,7 +71,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
     return DECODER.decode(b);
   }
 
-   private java.lang.CharSequence userId;
+   private CharSequence userId;
    private float totalAmount;
    private int nbOfItems;
 
@@ -88,16 +88,16 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
    * @param totalAmount The new value for totalAmount
    * @param nbOfItems The new value for nbOfItems
    */
-  public Order(java.lang.CharSequence userId, java.lang.Float totalAmount, java.lang.Integer nbOfItems) {
+  public Order(CharSequence userId, Float totalAmount, Integer nbOfItems) {
     this.userId = userId;
     this.totalAmount = totalAmount;
     this.nbOfItems = nbOfItems;
   }
 
-  public org.apache.avro.specific.SpecificData getSpecificData() { return MODEL$; }
+  public SpecificData getSpecificData() { return MODEL$; }
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
   // Used by DatumWriter.  Applications should not call.
-  public java.lang.Object get(int field$) {
+  public Object get(int field$) {
     switch (field$) {
     case 0: return userId;
     case 1: return totalAmount;
@@ -108,11 +108,11 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
 
   // Used by DatumReader.  Applications should not call.
   @SuppressWarnings(value="unchecked")
-  public void put(int field$, java.lang.Object value$) {
+  public void put(int field$, Object value$) {
     switch (field$) {
-    case 0: userId = (java.lang.CharSequence)value$; break;
-    case 1: totalAmount = (java.lang.Float)value$; break;
-    case 2: nbOfItems = (java.lang.Integer)value$; break;
+    case 0: userId = (CharSequence)value$; break;
+    case 1: totalAmount = (Float)value$; break;
+    case 2: nbOfItems = (Integer)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -121,7 +121,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
    * Gets the value of the 'userId' field.
    * @return The value of the 'userId' field.
    */
-  public java.lang.CharSequence getUserId() {
+  public CharSequence getUserId() {
     return userId;
   }
 
@@ -130,7 +130,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
    * Sets the value of the 'userId' field.
    * @param value the value to set.
    */
-  public void setUserId(java.lang.CharSequence value) {
+  public void setUserId(CharSequence value) {
     this.userId = value;
   }
 
@@ -172,8 +172,8 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
    * Creates a new Order RecordBuilder.
    * @return A new Order RecordBuilder
    */
-  public static com.codewithz.kafka.streams.model.Order.Builder newBuilder() {
-    return new com.codewithz.kafka.streams.model.Order.Builder();
+  public static Builder newBuilder() {
+    return new Builder();
   }
 
   /**
@@ -181,11 +181,11 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
    * @param other The existing builder to copy.
    * @return A new Order RecordBuilder
    */
-  public static com.codewithz.kafka.streams.model.Order.Builder newBuilder(com.codewithz.kafka.streams.model.Order.Builder other) {
+  public static Builder newBuilder(Builder other) {
     if (other == null) {
-      return new com.codewithz.kafka.streams.model.Order.Builder();
+      return new Builder();
     } else {
-      return new com.codewithz.kafka.streams.model.Order.Builder(other);
+      return new Builder(other);
     }
   }
 
@@ -194,11 +194,11 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
    * @param other The existing instance to copy.
    * @return A new Order RecordBuilder
    */
-  public static com.codewithz.kafka.streams.model.Order.Builder newBuilder(com.codewithz.kafka.streams.model.Order other) {
+  public static Builder newBuilder(Order other) {
     if (other == null) {
-      return new com.codewithz.kafka.streams.model.Order.Builder();
+      return new Builder();
     } else {
-      return new com.codewithz.kafka.streams.model.Order.Builder(other);
+      return new Builder(other);
     }
   }
 
@@ -208,7 +208,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<Order>
     implements org.apache.avro.data.RecordBuilder<Order> {
 
-    private java.lang.CharSequence userId;
+    private CharSequence userId;
     private float totalAmount;
     private int nbOfItems;
 
@@ -221,7 +221,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.codewithz.kafka.streams.model.Order.Builder other) {
+    private Builder(Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.userId)) {
         this.userId = data().deepCopy(fields()[0].schema(), other.userId);
@@ -241,7 +241,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
      * Creates a Builder by copying an existing Order instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.codewithz.kafka.streams.model.Order other) {
+    private Builder(Order other) {
       super(SCHEMA$);
       if (isValidValue(fields()[0], other.userId)) {
         this.userId = data().deepCopy(fields()[0].schema(), other.userId);
@@ -261,7 +261,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
       * Gets the value of the 'userId' field.
       * @return The value.
       */
-    public java.lang.CharSequence getUserId() {
+    public CharSequence getUserId() {
       return userId;
     }
 
@@ -271,7 +271,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
       * @param value The value of 'userId'.
       * @return This builder.
       */
-    public com.codewithz.kafka.streams.model.Order.Builder setUserId(java.lang.CharSequence value) {
+    public Builder setUserId(CharSequence value) {
       validate(fields()[0], value);
       this.userId = value;
       fieldSetFlags()[0] = true;
@@ -291,7 +291,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
       * Clears the value of the 'userId' field.
       * @return This builder.
       */
-    public com.codewithz.kafka.streams.model.Order.Builder clearUserId() {
+    public Builder clearUserId() {
       userId = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -311,7 +311,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
       * @param value The value of 'totalAmount'.
       * @return This builder.
       */
-    public com.codewithz.kafka.streams.model.Order.Builder setTotalAmount(float value) {
+    public Builder setTotalAmount(float value) {
       validate(fields()[1], value);
       this.totalAmount = value;
       fieldSetFlags()[1] = true;
@@ -331,7 +331,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
       * Clears the value of the 'totalAmount' field.
       * @return This builder.
       */
-    public com.codewithz.kafka.streams.model.Order.Builder clearTotalAmount() {
+    public Builder clearTotalAmount() {
       fieldSetFlags()[1] = false;
       return this;
     }
@@ -350,7 +350,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
       * @param value The value of 'nbOfItems'.
       * @return This builder.
       */
-    public com.codewithz.kafka.streams.model.Order.Builder setNbOfItems(int value) {
+    public Builder setNbOfItems(int value) {
       validate(fields()[2], value);
       this.nbOfItems = value;
       fieldSetFlags()[2] = true;
@@ -370,7 +370,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
       * Clears the value of the 'nbOfItems' field.
       * @return This builder.
       */
-    public com.codewithz.kafka.streams.model.Order.Builder clearNbOfItems() {
+    public Builder clearNbOfItems() {
       fieldSetFlags()[2] = false;
       return this;
     }
@@ -380,13 +380,13 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
     public Order build() {
       try {
         Order record = new Order();
-        record.userId = fieldSetFlags()[0] ? this.userId : (java.lang.CharSequence) defaultValue(fields()[0]);
-        record.totalAmount = fieldSetFlags()[1] ? this.totalAmount : (java.lang.Float) defaultValue(fields()[1]);
-        record.nbOfItems = fieldSetFlags()[2] ? this.nbOfItems : (java.lang.Integer) defaultValue(fields()[2]);
+        record.userId = fieldSetFlags()[0] ? this.userId : (CharSequence) defaultValue(fields()[0]);
+        record.totalAmount = fieldSetFlags()[1] ? this.totalAmount : (Float) defaultValue(fields()[1]);
+        record.nbOfItems = fieldSetFlags()[2] ? this.nbOfItems : (Integer) defaultValue(fields()[2]);
         return record;
       } catch (org.apache.avro.AvroMissingFieldException e) {
         throw e;
-      } catch (java.lang.Exception e) {
+      } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
       }
     }
